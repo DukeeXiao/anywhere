@@ -1,8 +1,11 @@
 {
-  "name": "anywhere",
-  "version": "1.0",
-  "description": "web server",
-  "main": "build/index.js",
+  "name": "anydoor",
+  "version": "0.1.0",
+  "description": "tiny nodeJS web server",
+  "main": "src/app.js",
+  "bin": {
+    "anydoor": "bin/anydoor"
+  },
   "license": "ISC",
   "scripts": {
     "lint": "eslint",
@@ -12,5 +15,10 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "pre-commit": "^1.2.2"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "handlebars": "^4.7.3",
+    "yargs": "^15.3.1"
   }
 }
